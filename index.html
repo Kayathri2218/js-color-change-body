@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-CA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Change</title>
+    </head>
+    <body>
+        <button onclick="click" id="btn">Clickable Color change</button>
+
+        <script>
+            let btn =document.querySelector("#btn");
+            let body = document.querySelector("body");
+            let colors = ["red","green","black","yellow","blue"];
+
+            btn.addEventListener('click',function(){
+                a=Math.round(Math.random()*colors.length);
+                body.style.backgroundColor=colors[a];
+            })
+        </script>
+    </body>
+</html>
